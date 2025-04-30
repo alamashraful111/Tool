@@ -1182,4 +1182,193 @@
                     <p>Your files never leave your browser. We don't upload them to our servers, ensuring complete privacy.</p>
                 </div>
                 
-                <div class
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Free Forever</h3>
+                    <p>All our basic tools are completely free to use with no hidden charges or watermarks.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works perfectly on all devices including smartphones and tablets with our responsive design.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>No Installation</h3>
+                    <p>Use our tools directly in your browser without downloading or installing any software.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>High Quality</h3>
+                    <p>Get professional-grade results with our optimized processing algorithms.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bottom Ad Container -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- Replace with your Google AdSense code -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- Testimonials Section -->
+        <section class="section testimonials">
+            <div class="section-title">
+                <h2>What Our Users Say</h2>
+                <p>Thousands of users trust our tools every day</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <img src="https://via.placeholder.com/150" alt="User" class="testimonial-avatar">
+                    <p class="testimonial-text">I use ToolMaster Pro daily for my blog. The image compressor saves me hours of work and reduces my website loading time significantly.</p>
+                    <h4 class="testimonial-author">Sarah Johnson</h4>
+                    <p class="testimonial-role">Blogger & Content Creator</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to get notified about new tools and features</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-about">
+                    <h3>About ToolMaster Pro</h3>
+                    <p>We provide free, high-quality online tools for images and PDFs. Our mission is to make file conversion and optimization accessible to everyone.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#image-tools">Image Tools</a></li>
+                        <li><a href="#pdf-tools">PDF Tools</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Image Tools</h3>
+                    <ul>
+                        <li><a href="#">Compressor</a></li>
+                        <li><a href="#">Converter</a></li>
+                        <li><a href="#">Resizer</a></li>
+                        <li><a href="#">Watermark</a></li>
+                        <li><a href="#">Background Remover</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>PDF Tools</h3>
+                    <ul>
+                        <li><a href="#">PDF Compressor</a></li>
+                        <li><a href="#">PDF to Word</a></li>
+                        <li><a href="#">Merge PDF</a></li>
+                        <li><a href="#">Split PDF</a></li>
+                        <li><a href="#">PDF to JPG</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 ToolMaster Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.innerHTML = this.innerHTML.includes('times') ? 
+                '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 768) {
+                        document.getElementById('mainNav').classList.remove('active');
+                        document.getElementById('mobileMenuBtn').innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+        
+        // Tool Card Click Handler
+        document.querySelectorAll('.tool-card-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // In a real implementation, this would navigate to the tool page
+                alert('This would navigate to the specific tool page in a real implementation.');
+            });
+        });
+        
+        // Initialize AdSense
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>
